@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title> Carbon Footprint </title>
+      <link type="text/css" rel="stylesheet" href="style.css">
+      <script src="script.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+
+      <h1> Carbon Emission Calulator </h1>
+
+      <section id="gas_emission">
+        <label for "mileage">Enter your car’s mpg: </label>
+        <br>
+        <form action="/submitMPG" method ="POST">
+          <input type="number" class="input" id="mileage" name="mileage" min="0" data-error-message="Enter a number above zero"/>
+        </form>
+        <br>
+        <label for "dailyCommutePerWeek">Enter your length of your daily commute in miles: </label>
+        <br>
+        <form action="/submitDailyCommute" method ="POST">
+          <input type="number" class="input" id="dailyCommutePerWeek" name="dailyCommutePerWeek" min="0" data-error-message="Enter a number above zero"/>
+        </form>
+        <br>
+      </section>
+
+      <section id="electric_emission">
+        <label for "kWh">Enter your electric usage in kWh: </label>
+        <br>
+        <form action="/submitKWH" method ="POST">
+          <input type="number" class="input" id="kWh" name="kWh" min="0" data-error-message="Please enter a number above zero"/>
+        </form>
+        <br>
+      </section>
+
+      <section id="household_emission">
+        <label for "householdgas">Enter your gas usage in kWh: </label>
+        <br>
+        <form action="/submitMonthlyGasUsage" method ="POST">
+          <input type="number" class="input" id="householdgas" name="householdgas" onkeyup="success()" min="0" data-error-message="Please enter a number above zero"/>
+        </form>
+        <br>
+      </section>
+
+        <button id='button'class="buttonStyle" onclick="averageEmissions()"disabled>Total Emissions </button>
+
+
+      <div class="outputs">
+        <p id ="gasEmissionAnswer"></p>
+        <p id ="electricEmissionAnswer"></p>
+        <p id ="householdEmissionAnswer"></p>
+        <p id = "myTag"></p>
+      </div>
+
+      <h1>How Can You Reduce Your Carbon Footprint?</h1>
+      <img src="reducingfootprint.jpg" alt="10 ways to reduce your carbon footprint" width="630" height="325">
+
+    </body>
+</html>

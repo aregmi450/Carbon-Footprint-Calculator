@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+  background-image: url("a.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: Garamound, sans-serif;
+  font-weight: normal;
+  color: white;
+}
+
+label {
+  color: white;
+  font-size: 30px;
+}
+
+input{
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  margin: 8px 0;
+  outline: none;
+  padding 8px;
+  box-sizing: border-box;
+  transition: 3s;
+  font-size:18pt;
+  height:40px;
+  width:200px;
+}
+
+.outputs {
+  color: white;
+  font-size: 28px;
+
+}
+
+button.buttonStyle{
+  background-color: #237739;
+  color:white;
+  border: none;
+  font-size: 16px;
+  padding: 15px 45px;
+  border-radius: 0px;
+}
+
+button:hover {
+  background-color: #124721
+}
